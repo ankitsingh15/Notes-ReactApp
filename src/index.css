@@ -11,3 +11,100 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  box-sizing: border-box;
+}
+.container{
+  /* min-width: 960px; */
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
+  min-height: 100vh;
+}
+
+
+.note{
+  background-color:#fef68a;
+  border-radius: 10px;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  /* To keep the spacing that was added to the textarea */
+  white-space: pre-wrap;
+}
+
+.note.new{
+  background-color:rgb(133, 215, 240);
+  
+}
+textarea{
+  background-color: rgb(133, 215, 240);
+  outline: none;
+  border: none;
+}
+
+.dark-mode{
+  background-color: black;
+}
+
+.dark-mode h1{
+  color: white;
+}
+
+
+.save{
+  border-radius: 15px;
+  background-color: #e1e1e1;
+  padding: 5px 10px 5px 10px;
+}
+  
+.save:hover{
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.delete:hover{
+  cursor: pointer;
+}
+.note-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.notelist{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap:1rem;
+}
+
+.searchbox{
+  display: flex;
+  background-color: grey;
+  padding: 5px;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+
+}
+.searchbox input{
+  background-color: grey;
+  border: none;
+  outline: none;
+}
+.Headertop{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+
+}
+.Headertop button{
+  border-radius: 15px;
+  font-size: 1.1rem;
+  height: fit-content;
+  
+}
+
